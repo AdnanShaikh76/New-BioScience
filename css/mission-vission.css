@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Lora&family=Playfair+Display:ital@0;1&family=Poppins&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*.container{
+    width: 100%;
+    height: 100vh;
+     background-color: black; 
+}*/
+header{
+    position: absolute;
+    width: 100%;
+    min-height: 66px;
+    background-color: #ffffff;   
+    box-shadow: -5px 19px 46px -11px rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    z-index: 1000;
+  }
+  header img{
+    width: 15vw;
+  }
+  header ul{
+    position: relative;
+  }
+  header ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+  }
+  header ul li a{
+    color: #21967E;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 15px 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-radius: 5px; */
+  }
+  header ul li a ion-icon{
+    margin-left: 2px;
+  }
+  header ul li a:hover{
+    transition: 0.2s ease;
+    background-color: #c3fae8;
+  }
+  header ul li ul{
+    position: absolute;
+    left: 0;
+    width: 170px;
+    background-color: white;
+    display: none;
+  }
+  header ul li:hover ul{
+    display: block;
+  }
+  header ul li ul li{
+    position: relative;
+    /* padding: 5px 12px; */
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  header ul li ul li a{
+    font-size: 1em;
+    padding: 12px 10px;
+  }
+  .menubtn{
+    position: relative;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    /* background-color: #000; */
+}
+.menubtn::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #21967E;
+    transform: translateY(-12px);
+    box-shadow: 0 12px #21967E;
+}
+.menubtn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #21967E;
+    transform: translateY(12px);
+}
+header.active .menubtn::before{
+    transform: rotate(45deg);
+    box-shadow: 0 0 #21967E;
+}
+header.active .menubtn::after{
+    transform: rotate(315deg);
+    box-shadow: 0 0 #21967E;
+}  /* jbhjhbhb */
+.policies-banner{
+    width: 100%;height: 50vh;
+    /* background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)); */
+}
+.policies-banner img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 85vw;
+    height: 315vh;
+    background: #f5f5f5;
+    position: absolute;
+    top: 195%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 5px double #21967E;
+    box-shadow: 0px 0px 35px -3px rgba(0,0,0,0.75);
+    padding: 10px 25px;
+    /* text-align: center; */
+}
+.container .logo-img{
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    position: absolute;
+    top: 10px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 3px double #21967E;
+    display: flex;
+    align-items: center;
+    /* background-position: center; */
+    box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.75);
+}
+.container .logo-img img{
+    width: 100%;
+    height: 95%;
+    /* background-position: center; */
+    background-size: cover;
+    object-fit: contain;
+    position: absolute;
+    top: -5px;
+    left: 3px;
+}
+.container h2{
+    color: #21967E;
+    font-family: 'Jost', sans-serif;
+    position: absolute;
+    font-size: 30px;
+    top: 120px;
+    left: 8%;
+}
+.container p{
+    color: #21967E;
+    position: relative;
+    top: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.to-top{
+    /* background: #21967E; */
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: #21967E;
+    border: 1px solid #219678;
+    opacity: 0;
+    transition: all 0.4s;
+    pointer-events: none;
+  }
+  .to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+  }

@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Lora&family=Playfair+Display:ital@0;1&family=Poppins&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+  position: absolute;
+  width: 100%;
+  min-height: 66px;
+  background-color: #ffffff;   
+  box-shadow: -5px 19px 46px -11px rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+  z-index: 1000;
+}
+header img{
+  width: 15vw;
+}
+header ul{
+  position: relative;
+}
+header ul li{
+  position: relative;
+  list-style: none;
+  float: left;
+}
+header ul li a{
+  color: #21967E;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 15px 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border-radius: 5px; */
+}
+header ul li a ion-icon{
+  margin-left: 2px;
+}
+header ul li a:hover{
+  transition: 0.2s ease;
+  background-color: #c3fae8;
+}
+header ul li ul{
+  position: absolute;
+  left: 0;
+  width: 170px;
+  background-color: white;
+  display: none;
+}
+header ul li:hover ul{
+  display: block;
+}
+header ul li ul li{
+  position: relative;
+  /* padding: 5px 12px; */
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+header ul li ul li a{
+  font-size: 1em;
+  padding: 12px 10px;
+}
+.menubtn{
+  position: relative;
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  /* background-color: #000; */
+}
+.menubtn::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #21967E;
+  transform: translateY(-12px);
+  box-shadow: 0 12px #21967E;
+}
+.menubtn::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #21967E;
+  transform: translateY(12px);
+}
+header.active .menubtn::before{
+  transform: rotate(45deg);
+  box-shadow: 0 0 #21967E;
+}
+header.active .menubtn::after{
+  transform: rotate(315deg);
+  box-shadow: 0 0 #21967E;
+}
+/* jbhjhbhb */
+
+.socialsidefix{
+  position: fixed;
+  right: 0;
+  /* bottom: 50px; */
+  top: 60;
+  width: 100px;
+  height: 100px;
+  background: #000;
+}
+.menu-btn {
+    /* float: right; */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+    cursor: pointer;
+    color: #000;
+    z-index: 100;
+  }
+  /* .Cerfiticate{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 160px;
+    /* background: #c3fae8; */
+    /* border-bottom: 1px solid #21967E; 
+    }*/
+  
+  body h2{ 
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, 120%);
+    /* transform: translate(-50%, 50%); */
+    /* align-self: center; */
+    width: max-content;
+    padding: 2px 25px;
+    border-radius: 25px;
+    /* background-color: #c3fae8; */
+    /* text-align: center; */
+    position: relative;
+    top: -130px;
+    font-family: 'Jost', sans-serif;
+    color: #21967E;
+    font-size: 30px;
+    background: transparent;
+    border: 1px dotted #219678;
+  }
+  /* .Cerfiticate .certi-box-left{
+    width: 650px;
+    height: 280px;
+    position: absolute;
+    top: 35px;
+    left: 100px;
+    border: 1px solid #21967E;
+    border-radius: 15px;
+    z-index: 0;
+    padding: 15px 5px;
+  } */
+  /* .Cerfiticate .certi-box-left img{
+    width: 80px;
+    position: absolute;
+    top: -25px;
+    left: -35px;
+    z-index: 2;
+    background: #fff;
+    border-radius: 50%;
+  } */
+  /* .Cerfiticate .certi-box-left h3{
+    color:#21967E;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    left: 70px;
+    top: 27px;
+  }
+  .Cerfiticate .certi-box-left p{
+    color:#21967E;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    left: 10px;
+    top: 45px;
+  } */
+  /* .Cerfiticate .cerft-img-left{
+    position: absolute;
+    top: 35px;
+    right: 100px;
+    width: 240px;
+    height: 280px;
+    background: red;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 5px solid #21967E;
+  }
+  .Cerfiticate .cerft-img-left img{
+    width: 100%;
+    height: 100%; 
+  }*/
+  /* .Cerfiticate .certi-box-right{
+    width: 650px;
+    height: 280px;
+    position: absolute;
+    top: 35px;
+    right: 100px;
+    border: 1px solid #21967E;
+    border-radius: 15px;
+    z-index: 0;
+    padding: 15px 5px;
+  }
+  .Cerfiticate .certi-box-right img{
+    width: 80px;
+    position: absolute;
+    top: -25px;
+    right: -35px;
+    z-index: 2;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .Cerfiticate .certi-box-right h3{
+    width: max-content;
+    color:#21967E;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    right: -15px;
+    top: 20px;
+  }
+  .Cerfiticate .certi-box-right p{
+    color:#21967E;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    left: 12px;
+    top: 40px;
+  }.Cerfiticate .cerft-img-right{
+    position: absolute;
+    top: 35px;
+    left: 100px;
+    width: 240px;
+    height: 280px;
+    background: red;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 5px solid #21967E;
+  }
+  .Cerfiticate .cerft-img-right img{
+    width: 100%;
+    height: 100%;
+  } */
+
+  .Cerfiticate-banner{
+   width: 100%;
+   height: 70vh;
+   position: absolute;
+   top: 65px;
+  }
+  .Cerfiticate-banner img{
+    width: 100%;
+    /* height: 100%; */
+  }
+  .Cerfiticate-banner p{
+    width: 70%;
+    text-align: center;
+    color: #21967E;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cert-list{
+    width: 85%;
+    height: max-content;
+    /* background: #c3fae8; */
+    position: relative;
+    top: 100px;
+    left: 7%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-left: -15px;
+    margin-right: -15px; */
+    border-radius: 15px;
+
+  }
+  
+.cert-list .certi-box{
+  position: relative;
+  width: 220px;
+  height: 280px;
+  background: #a9d3ca;
+  margin: 15px 25px;
+  border-radius: 10px;
+  border: 8px double #fff;
+}
+.cert-list .certi-box .frame{
+  width: 160px;
+  height: 226px;
+  /* background: #ffffff;  */
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cert-list .certi-box .frame img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 5px double #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+} 
+.cert-list .certi-box .frame img:hover{
+  transform: scale(0.9);
+}
+.cert-list .certi-box .frame p{
+  position: relative;
+  top: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.popup-image{
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.9);
+  height: 100%;
+  width: 100%;
+  /* overflow: scroll; */
+  display: none;
+}
+.popup-image span{
+  position: absolute;
+  top: 0; right: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ffffff;
+  cursor: pointer;
+}
+.popup-image img{
+  position: absolute;
+  top: 50%;left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px double #ffffff;
+  border-radius: 5px;
+  width: 420px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+  .to-top{
+    /* background: #21967E; */
+    position: fixed;
+    bottom: 16px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: #21967E;
+    border: 1px solid #219678;
+    opacity: 0;
+    transition: all 0.4s;
+    pointer-events: none;
+  }
+  .to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+  }

@@ -1,0 +1,39 @@
+@media screen and (max-width: 767px) {
+  header{
+    padding: 5px 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  header img{
+    width: 30vw;
+  }
+  header nav{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    background: #ffffff;
+    display: none;
+    padding: 10px 80px;
+  }
+  header.active nav{
+    display: initial;
+  }
+  header nav ul li{
+    width: 100%;
+  }
+  header nav ul li ul{
+    position: relative;
+    width: 100%;
+  }
+  header ul li a{
+    font-size: 1.5em;
+  }
+  header ul li ul li a{
+    font-size: 1.5em;
+  }
+  .menubtn{
+    display: block;
+    top: 20px;
+  }
+}
+  
