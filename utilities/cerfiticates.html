@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Media/Unilink Bio-Science Logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c6817c2252.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/certificates.css">
+    <title>Legals | Unilink BioScience</title>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="../Media/Unilink Bio-Science Logo-1456 - Copy.png" alt="" class="Logo"></a>
+        <div class="menubtn"></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">About Us<ion-icon name="caret-down-outline"></ion-icon></a>
+                    <ul>
+                        <li><a href="utilities/About.html">About Us</a></li>
+                        <li><a href="utilities/cerfiticates.html">Legals</a></li>
+                        <li><a href="utilities/mission-vission.html">Missions & Vision</a></li>
+                        <li><a href="utilities/Policies.html">Policies</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Our Products</a></li>
+                <li><a href="#">Clints</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- 6546516165 -->
+    <section class="Cerfiticate-banner">
+      <img src="../Media/banner certificate.jpg" alt="">
+      <h2 contenteditable="true">Legals</h2>
+      <p>
+        The company complies with all standard manufacturing practices as laid down by the World Health Organization and certified by the Food and Drug Control Administration.<br>
+The company also possesses following certifications highlighting its Quality Credentials.
+      </p>
+      <div class="cert-list">
+        <div class="certi-box">
+            <div class="frame">
+                <img src="../Media/Certificates_imgs/IMG/UNILINK BIOSCIENCE_US FDA_page-0001.jpg" alt="">
+                <p>us fda</p>
+            </div>
+        </div>
+        <div class="certi-box">
+            <div class="frame">
+                <img src="../Media/Certificates_imgs/IMG/UNILINK BIOSCIENCE_VEGAN_page-0001.jpg" alt="">
+                <p>vegan</p>
+            </div>
+        </div>
+        <div class="certi-box">
+            <div class="frame">
+                <img src="../Media/Certificates_imgs/IMG/UNILINK BIOSCIENCE_NON GMO_1_page-0001.jpg" alt="">
+                <p>non gmo-1</p>
+            </div>
+        </div>
+        <div class="certi-box">
+            <div class="frame">
+                <img src="../Media/Certificates_imgs/IMG/UNILINK BIOSCIENCE_ORGANIC_page-0001.jpg" alt="">
+                <p>organic</p>
+            </div>
+        </div>
+        <div class="certi-box">
+            <div class="frame">
+                <img src="../Media/Certificates_imgs/IMG/UNILINK BIOSCIENCE_KOSHER_page-0001 JPG.jpg" alt="">
+                <p>kosher</p>
+            </div>
+        </div>
+        <div class="certi-box">
+            <div class="frame">
+                <img src="../Media/Certificates_imgs/IMG/UNILINK BIOSCIENCE_NON GMO_page-0001.jpg" alt="">
+                <p>non Gmo</p>
+            </div>
+        </div>
+       
+        <div class="certi-box">
+            <div class="frame">
+                <img src="../Media/Certificates_imgs/IMG/UNILINK BIOSCIENCE_GMP  menu_page-0001 JPG.jpg" alt="">
+                <p>gmp</p>
+            </div>
+        </div>
+        <div class="certi-box">
+            <div class="frame">
+                <img src="../Media/Certificates_imgs/IMG/UNILINK BIOSCIENCE_HACCP menu_page-0001 JPG.jpg" alt="">
+                <p>haccp</p>
+            </div>
+        </div>
+        <div class="certi-box">
+            <div class="frame">
+                <img src="../Media/Certificates_imgs/IMG/UNILINK BIOSCIENCE_9001menu_page-0001 JPG .jpg" alt="">
+                <p>iso 9001</p>
+            </div>
+        </div>
+         <div class="certi-box">
+            <div class="frame">
+                <img src="../Media/Certificates_imgs/IMG/UNILINK BIOSCIENCE_HALAL_page-0001 JPG.jpg" alt="">
+                <p>Halal</p>
+            </div>
+        </div>
+         <div class="certi-box">
+            <div class="frame">
+                <img src="../Media/Certificates_imgs/IMG/UNILINK BIOSCIENCE_FSSC 22000 menu_page-0001 JPG.jpg" alt="">
+                <p>fssc 22000</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="../Media/Certificates_imgs/IMG/UNILINK BIOSCIENCE_9001menu_page-0001 JPG  - Copy.jpg" alt="">
+    </div>
+    </section>
+    
+    <!-- Scroll To Top Button -->
+    <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
+    <!-- Scroll To Top Button -->
+
+    <script src="../js/toggle.js"></script>
+
+    <!-- Ion Icon Cdn For ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/scrolltotop.js"></script>
+    <script>
+        document.querySelectorAll('.cert-list img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        })
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+    <script src="../js/responsive.js"></script>
+</body>
+</html>
