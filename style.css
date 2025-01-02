@@ -75,7 +75,7 @@ body {
   width: 100%;
   background: #fff;
   color: #000;
-  opacity: 0.85;
+  /* opacity: 0.85; */
   min-height: 50px;
   z-index: 12;
 }
