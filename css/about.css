@@ -9,6 +9,9 @@
 html{
   scroll-behavior: smooth;
 }
+.container{
+  position: relative;
+}
 header{
   position: absolute;
   width: 100%;
@@ -20,6 +23,7 @@ header{
   justify-content: space-between;
   padding: 0px 80px;
   z-index: 1000;
+  /* display: none;  */
 }
 header img{
   width: 15vw;
@@ -195,4 +199,16 @@ header.active .menubtn::after{
   bottom: 32px;
   pointer-events: auto;
   opacity: 1;
+}
+#footer{
+  width: 100%;
+  
+}
+#footer h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  font-weight: 500;
+  color: #117964;
+  background: #c3fae8;
 }
